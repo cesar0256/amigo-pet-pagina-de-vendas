@@ -56,7 +56,7 @@ Não conheço o menu exato da Greenn, então confirme na central de ajuda dela. 
 1. **Divulgar o link da página de vendas** (o do Passo 2) nos seus anúncios e redes sociais.
 2. **Configurar a entrega:** no produto, coloque o link do AmigoPet (o endereço onde o app está hospedado) como conteúdo ou mensagem de acesso, para o cliente receber depois da compra. Sugestão de texto:
    > Obrigado por comprar o AmigoPet! 🐾 Abra este link no celular: **(link do app)**. No Android use o Chrome e no iPhone use o Safari. Depois entre na aba **Instalar** para colocar o app na tela inicial. Qualquer dúvida: amigopet56@gmail.com
-3. **Informar a garantia de 7 dias** nas configurações do produto, para ficar igual à página.
+3. **Reembolso:** a página não menciona garantia, mas os Termos de Uso ainda citam o reembolso em até 7 dias (direito de arrependimento em compras online, art. 49 do Código de Defesa do Consumidor). Configure a política de reembolso na Greenn de acordo e, em caso de dúvida, confirme com um advogado.
 4. Se a Greenn pedir a página de vendas do produto, informe o link do Passo 2.
 
 ## Domínio próprio (recomendado para vender)
