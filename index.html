@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>AmigoPet: melhore a vida do seu pet com poucos minutos por dia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Melhore a vida do seu pet com poucos minutos por dia. Saiba, num toque, o que ele precisa hoje: vacinas, remédios, rotina, gastos, adestramento e passeios no celular.">
+<meta name="theme-color" content="#ff7a3d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AmigoPet: melhore a vida do seu pet com poucos minutos por dia">
+<meta property="og:description" content="Saiba, num toque, o que o seu pet precisa hoje: vacinas, remédios, rotina, gastos, adestramento e passeios no celular.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--o:#ff7a3d;--o2:#ffc23d;--od:#e8590c;--ink:#3b2a20;--mut:#86695a;--bg:#fff7f0;--cd:#fffaf4;--bd:#f6d3b3;--g:#2fb872;--soft:#ffe6d0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 Nunito,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+h1,h2,h3{font-family:'Baloo 2',Nunito,sans-serif;line-height:1.1;margin:0}
+h1{font-size:clamp(38px,6vw,60px);font-weight:800}h2{font-size:clamp(30px,4.2vw,44px);font-weight:800}h3{font-size:22px;font-weight:800}
+p{margin:0}a{color:var(--od)}
+.w{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}.alt{background:linear-gradient(180deg,#fff0e0,#ffe6d0)}
+.hl{color:var(--o)}.mut{color:var(--mut)}.c{text-align:center}
+.chip{display:inline-block;background:var(--soft);color:var(--od);font-weight:800;font-size:14px;border-radius:999px;padding:6px 14px}
+.btn{display:inline-block;background:linear-gradient(135deg,#ff7a3d,#ff9a3d);color:#fff;font-weight:800;text-decoration:none;border-radius:999px;padding:16px 30px;font-size:18px;box-shadow:0 10px 24px #ff7a3d55;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.big{font-size:21px;padding:20px 36px}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--bd);box-shadow:none}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:#fff7f0ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--bd)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:800 26px 'Baloo 2',sans-serif;color:var(--ink);text-decoration:none}.logo b{color:var(--o)}
+nav a{margin-right:22px;color:var(--mut);font-weight:700;text-decoration:none}header .btn{padding:10px 22px;font-size:16px}
+.hero{padding:48px 0 56px;background:radial-gradient(circle at 85% 10%,#ffe7a099,transparent 40%),radial-gradient(circle at 5% 0,#ffc89099,transparent 40%)}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{margin:16px 0}.lead{font-size:20px;color:var(--mut);max-width:560px}
+.lead b{color:var(--ink)}.cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:26px 0 16px}
+.trust{display:flex;gap:18px;flex-wrap:wrap;font-weight:700;font-size:15px;color:var(--mut)}
+.price-tag{display:inline-flex;flex-direction:column;line-height:1.1}.price-tag small{font-size:13px;font-weight:700;opacity:.9}
+.sub{display:flex;gap:16px;align-items:center;background:linear-gradient(135deg,#fff,#fff1e0);border:1px solid var(--bd);border-left:6px solid var(--o);border-radius:22px;padding:18px 22px 18px 18px;margin-top:22px;max-width:560px;box-shadow:0 16px 36px #ff7a3d33;position:relative;overflow:hidden}.sub::after{content:'🐾';position:absolute;right:-4px;bottom:-16px;font-size:80px;opacity:.12;transform:rotate(-18deg)}.sub i{flex:none;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#ff7a3d,#ffc23d);display:grid;place-items:center;font-style:normal;font-size:26px;box-shadow:0 8px 18px #ff7a3d66}.sub b{display:block;font:800 23px 'Baloo 2',sans-serif;line-height:1.15;margin-bottom:4px;color:var(--ink)}.sub b em{font-style:normal;color:var(--o)}.sub span{display:block;color:var(--mut);font-size:16px;position:relative;z-index:1}.stick .btn{font-size:16px;line-height:1.25}
+/* mockups */
+.ph{width:300px;max-width:100%;margin:0 auto;background:#1d1a22;border-radius:42px;padding:10px;box-shadow:0 30px 60px #c9742e55;transform:rotate(2deg)}
+.ps{background:linear-gradient(180deg,#fff3e6,#ffe0c4);border-radius:34px;padding:16px 12px;min-height:560px;font-size:13px}
+.mc{background:var(--cd);border:1px solid var(--bd);border-radius:22px;padding:16px;box-shadow:0 10px 26px #ff7a3d22}
+.hm{display:flex;gap:10px;align-items:center;background:linear-gradient(135deg,#ff6a2b,#ffc23d);color:#fff;border-radius:20px;padding:12px}
+.av{width:54px;height:54px;border-radius:50%;background:#fff;flex:none;overflow:hidden}.av svg,.pet svg{width:100%;height:100%;display:block}
+.hm b{font:800 24px 'Baloo 2';display:block;line-height:1}.hm small{display:block;opacity:.95;font-size:12px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}.tiles div{border-radius:14px;color:#fff;text-align:center;padding:8px 2px;font:800 17px 'Baloo 2'}.tiles small{display:block;font:700 10px Nunito}
+.it{display:flex;gap:9px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--bd)}.it:last-child{border:0}
+.it i{font-style:normal;font-size:20px}.it div{flex:1}.it b{display:block;font-size:14px}.it small{color:var(--mut);font-size:12px}
+.tg{font:800 11px Nunito;border-radius:99px;padding:2px 9px;background:#dff6ea;color:#17724a;white-space:nowrap}.tg.y{background:#fff0c2;color:#7a5400}.tg.r{background:#fde3e3;color:#a11d22}
+/* secoes */
+.sh{max-width:720px;margin:0 auto 40px;text-align:center}.sh p{color:var(--mut);margin-top:12px;font-size:19px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pain{background:var(--cd);border:1px solid var(--bd);border-radius:22px;padding:22px}.pain i{font-size:34px;font-style:normal}.pain h3{margin:8px 0 6px;font-size:20px}.pain p{color:var(--mut);font-size:16px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:72px}.fr:nth-child(even) .ft{order:2}
+.ft ul{list-style:none;padding:0;margin:16px 0 0}.ft li{padding-left:30px;position:relative;margin:8px 0;font-weight:600}.ft li::before{content:"✓";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:var(--g);color:#fff;font-size:13px;display:grid;place-items:center}
+.ft p{margin:12px 0;color:var(--mut)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center;font-size:12px;font-weight:700}.cal span{padding:4px 0;border-radius:8px;position:relative;min-height:30px}.cal .d{display:flex;gap:2px;justify-content:center;margin-top:1px}.cal .d i{width:5px;height:5px;border-radius:50%}.cal .t{background:var(--o);color:#fff}
+.bub{border-radius:16px;padding:9px 12px;margin:7px 0;max-width:88%;font-size:13px}.bub.u{background:var(--o);color:#fff;margin-left:auto}.bub.a{background:var(--soft)}
+.medals{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.medals div{border-radius:14px;text-align:center;padding:8px 2px;font-size:10px;font-weight:800;background:linear-gradient(135deg,#fff1b8,#ffd37a)}.medals div.off{background:#eee8e2;filter:grayscale(1);opacity:.6}.medals span{display:block;font-size:24px}
+.bar{height:10px;border-radius:9px;background:var(--soft);overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--o),var(--o2));border-radius:9px}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.mini div{background:var(--cd);border:1px solid var(--bd);border-radius:20px;padding:20px;text-align:center}.mini i{font-size:32px;font-style:normal;display:block}.mini b{display:block;margin:6px 0 2px}.mini small{color:var(--mut)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{background:var(--cd);border:1px solid var(--bd);border-radius:22px;padding:26px}.step em{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--o),var(--o2));color:#fff;font:800 22px 'Baloo 2';display:grid;place-items:center;font-style:normal;margin-bottom:12px}
+.offer{max-width:520px;margin:0 auto;background:#fff;border:3px solid var(--o);border-radius:30px;padding:34px;text-align:center;box-shadow:0 24px 60px #ff7a3d44}
+.offer .pr{font:800 78px 'Baloo 2';line-height:1;margin:14px 0 4px}.offer ul{list-style:none;padding:0;margin:20px 0 26px;text-align:left}.offer li{padding-left:30px;position:relative;margin:9px 0;font-weight:600}.offer li::before{content:"✓";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:var(--g);color:#fff;font-size:13px;display:grid;place-items:center}
+.gar{max-width:620px;margin:26px auto 0;border:2px dashed var(--o);border-radius:22px;padding:18px 22px;background:var(--cd);display:flex;gap:16px;align-items:center}.gar i{font-size:40px;font-style:normal}
+details{background:#fff;border:1px solid var(--bd);border-radius:18px;padding:16px 20px;margin:10px 0}summary{font-weight:800;cursor:pointer;font-size:18px}details p{margin-top:10px;color:var(--mut)}
+.final{background:#20243a;color:#fff;border-radius:34px;padding:56px 24px;text-align:center}.final h2{color:#fff}.final h2 span{color:var(--o2)}.final p{color:#ffffffd0;margin:14px auto 26px;max-width:560px}
+footer{text-align:center;padding:36px 20px 120px;color:var(--mut);font-size:15px}footer a{color:var(--mut);margin:0 6px}
+.stick{display:none;position:fixed;left:0;right:0;bottom:0;z-index:25;background:#fff7f0f2;backdrop-filter:blur(8px);border-top:1px solid var(--bd);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.stick .btn{display:block;text-align:center;padding:14px}
+@media(max-width:860px){nav{display:none}.hg,.fr{grid-template-columns:1fr;gap:30px}.fr:nth-child(even) .ft{order:0}.grid3,.steps{grid-template-columns:1fr}.grid4,.mini{grid-template-columns:1fr 1fr}.ph{transform:none}.stick{display:block}section{padding:48px 0}header .btn{display:none}}
+@media(max-width:860px){.cta-row .btn.big{display:block;width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="dog" viewBox="0 0 120 120"><ellipse cx="28" cy="50" rx="15" ry="30" fill="#c9742e" transform="rotate(18 28 50)"/><ellipse cx="92" cy="50" rx="15" ry="30" fill="#c9742e" transform="rotate(-18 92 50)"/><circle cx="60" cy="62" r="38" fill="#f6b86b"/><ellipse cx="60" cy="78" rx="19" ry="15" fill="#fff1de"/><circle cx="46" cy="56" r="5" fill="#3b2a20"/><circle cx="74" cy="56" r="5" fill="#3b2a20"/><circle cx="47.5" cy="54.5" r="1.6" fill="#fff"/><circle cx="75.5" cy="54.5" r="1.6" fill="#fff"/><ellipse cx="60" cy="71" rx="7" ry="5" fill="#3b2a20"/><path d="M60 76v5M52 83q8 6 16 0" stroke="#3b2a20" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="60" cy="90" rx="6" ry="4" fill="#ff8aa0"/><circle cx="36" cy="70" r="5" fill="#ff9a8a" opacity=".5"/><circle cx="84" cy="70" r="5" fill="#ff9a8a" opacity=".5"/></symbol><symbol id="cat" viewBox="0 0 120 120"><path d="M20 52L24 12L52 34Z" fill="#9aa3b8"/><path d="M100 52L96 12L68 34Z" fill="#9aa3b8"/><path d="M27 42l2-15 13 10z" fill="#ffb3c1"/><path d="M93 42l-2-15-13 10z" fill="#ffb3c1"/><circle cx="60" cy="68" r="38" fill="#b9c1d6"/><ellipse cx="45" cy="62" rx="5" ry="7" fill="#3b2a20"/><ellipse cx="75" cy="62" rx="5" ry="7" fill="#3b2a20"/><circle cx="46.5" cy="59" r="1.8" fill="#fff"/><circle cx="76.5" cy="59" r="1.8" fill="#fff"/><path d="M56 74h8l-4 4z" fill="#ff8aa0"/><path d="M60 78q-5 7-12 4M60 78q5 7 12 4" stroke="#3b2a20" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M30 74h-16M30 80l-14 5M90 74h16M90 80l14 5" stroke="#3b2a20" stroke-width="1.5" stroke-linecap="round"/><circle cx="36" cy="76" r="5" fill="#ff9a8a" opacity=".45"/><circle cx="84" cy="76" r="5" fill="#ff9a8a" opacity=".45"/></symbol></svg>
+
+<header><div class="w"><a class="logo" href="#topo">🐾 Amigo <b>Pet</b></a><nav><a href="#recursos">Recursos</a><a href="#como">Como funciona</a><a href="#faq">Perguntas</a></nav><a class="btn cta" href="#oferta">Quero o app</a></div></header>
+
+<main id="topo">
+<section class="hero"><div class="w hg">
+ <div>
+  <span class="chip">🐶 Para quem trata o pet como família 🐱</span>
+  <h1>Melhore a vida do seu pet <span class="hl">com poucos minutos por dia.</span></h1>
+  <p class="lead">Organize a <b>saúde, a rotina e os passeios</b> dele, sem papelzinho e sem estresse.</p><div class="sub"><i>🔎</i><div><b>Saiba, num toque, <em>o que o seu pet precisa hoje.</em></b><span>Vacina, remédio, banho e passeio: tudo no seu celular, na hora certa.</span></div></div>
+  <div class="cta-row"><a class="btn big cta" href="#oferta">Quero organizar a vida do meu pet por <span data-price>R$ 27,00</span></a><a class="btn ghost" href="#recursos">Ver como funciona</a></div>
+  <div class="trust"><span>✅ Cães e gatos</span><span>🛡 Garantia de 7 dias</span><span>📲 Instala no celular</span></div>
+ </div>
+ <div class="ph"><div class="ps">
+  <div class="hm"><div class="av"><svg><use href="#dog"/></svg></div><div><small>Boa tarde! 👋</small><b>Thor</b><small>Golden · 3 anos (≈ 29 anos humanos)</small></div></div>
+  <div class="tiles"><div style="background:linear-gradient(135deg,#ffb36b,#ff7a3d)">2<small>tarefas hoje</small></div><div style="background:linear-gradient(135deg,#6ee7a8,#2fb872)">3<small>passeios</small></div><div style="background:linear-gradient(135deg,#7db8ff,#3b82f6)">R$ 420<small>no mês</small></div></div>
+  <div class="mc" style="padding:10px 14px"><div class="it"><i>💉</i><div><b>Vacina V10</b><small>Daqui a 5 dias</small></div><span class="tg y">Agendar</span></div><div class="it"><i>💊</i><div><b>Antibiótico</b><small>Hoje, 20h</small></div><span class="tg">20:00</span></div><div class="it"><i>🛁</i><div><b>Banho e tosa</b><small>Sábado, 10h</small></div><span class="tg">OK</span></div><div class="it"><i>🎓</i><div><b>Lição: Deitar</b><small>+27 XP</small></div><span class="tg">★★★★★</span></div></div>
+ </div></div>
+</div></section>
+
+<section><div class="w">
+ <div class="sh"><span class="chip">Você se identifica?</span><h2 style="margin-top:14px">Cuidar de pet é amor. Mas também é <span class="hl">muita coisa pra lembrar.</span></h2><p>Se alguma dessas situações já aconteceu com você, o AmigoPet foi feito pra você.</p></div>
+ <div class="grid3" id="dores"></div>
+</div></section>
+
+<section class="alt" id="recursos"><div class="w">
+ <div class="sh"><span class="chip">O que o app faz</span><h2 style="margin-top:14px">Tudo que seu melhor amigo precisa, <span class="hl">num só lugar</span></h2><p>Organização de verdade, com cara de brincadeira.</p></div>
+ <div id="feats"></div>
+</div></section>
+
+<section><div class="w">
+ <div class="sh"><h2>E ainda tem <span class="hl">muito mais</span></h2></div>
+ <div class="mini" id="mais"></div>
+</div></section>
+
+<section class="alt" id="como"><div class="w">
+ <div class="sh"><span class="chip">Simples assim</span><h2 style="margin-top:14px">Comece a usar em <span class="hl">poucos minutos</span></h2></div>
+ <div class="steps">
+  <div class="step"><em>1</em><h3>Faça a compra</h3><p class="mut">Pagamento rápido e seguro. Você recebe o acesso ao app por e-mail.</p></div>
+  <div class="step"><em>2</em><h3>Instale no celular</h3><p class="mut">Abra o link e toque em instalar. O AmigoPet vira um ícone na sua tela inicial.</p></div>
+  <div class="step"><em>3</em><h3>Cadastre seu pet</h3><p class="mut">Nome, foto, espécie e nascimento. Depois é só registrar vacinas, remédios e rotina.</p></div>
+ </div>
+</div></section>
+
+<section id="oferta"><div class="w">
+ <div class="sh"><span class="chip">Oferta</span><h2 style="margin-top:14px">Menos que um <span class="hl">saquinho de petisco</span></h2><p>Um preço simples para ter todos os cuidados do seu pet na palma da mão.</p></div>
+ <div class="offer">
+  <h3>AmigoPet completo</h3><div class="pr"><span data-price>R$ 27,00</span></div><p class="mut" data-note>Acesso completo ao app</p>
+  <ul><li>Vacinas, remédios, consultas e peso com histórico</li><li>Calendário colorido da rotina com lembretes</li><li>Controle de gastos com gráficos e orçamento</li><li>Adestramento com XP, notas e medalhas</li><li>Passeios com trajeto, tempo, distância e calorias</li><li>Assistente que conhece o histórico do seu pet</li><li>Vários pets, cães e gatos, com foto</li><li>Instala no celular e funciona sem internet</li></ul>
+  <a class="btn big cta" href="#oferta">Quero organizar a vida do meu pet por <span data-price>R$ 27,00</span></a>
+ </div>
+ <div class="gar"><i>🛡</i><div><b>Garantia de 7 dias</b><p class="mut">Assine, use e, se não gostar, peça o reembolso em até 7 dias. Simples assim.</p></div></div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w" style="max-width:780px">
+ <div class="sh"><span class="chip">Dúvidas</span><h2 style="margin-top:14px">Perguntas frequentes</h2></div>
+ <div id="faqs"></div>
+</div></section>
+
+<section><div class="w"><div class="final">
+ <h2>Seu melhor amigo cuida de você todos os dias. <span>Agora é sua vez.</span></h2>
+ <p>Vacinas em dia, remédios na hora, rotina organizada e muito mais diversão com o seu pet.</p>
+ <a class="btn big cta" href="#oferta">Quero organizar a vida do meu pet por <span data-price>R$ 27,00</span></a>
+</div></div></section>
+</main>
+
+<footer><p>🐾 AmigoPet · © 2026 · Todos os direitos reservados</p><p style="margin-top:8px"><a id="lt" href="termos.html">Termos de uso</a>·<a id="lp" href="privacidade.html">Política de privacidade</a>·<a id="lc" href="mailto:amigopet56@gmail.com">Contato</a></p><p style="margin-top:8px;font-size:13px">O AmigoPet ajuda a organizar os cuidados e não substitui o médico-veterinário.</p></footer>
+<div class="stick"><a class="btn cta" href="#oferta">Quero organizar a vida do meu pet por <span data-price>R$ 27,00</span></a></div>
+
+<script>
+/* ====== CONFIGURE AQUI ====== */
+const CHECKOUT_URL='https://payfast.greenn.com.br/redirect/825782';  // link de compra (Greenn). Vazio = rola até a oferta
+const PRICE='R$ 27,00';
+const PRICE_NOTE='Acesso completo ao app';
+const TERMS_URL='termos.html',PRIVACY_URL='privacidade.html',EMAIL='amigopet56@gmail.com';
+/* ============================ */
+const $=s=>document.querySelector(s),pet=(k)=>`<svg><use href="#${k}"/></svg>`;
+document.querySelectorAll('[data-price]').forEach(e=>e.textContent=PRICE);$('[data-note]').textContent=PRICE_NOTE;
+if(CHECKOUT_URL)document.querySelectorAll('.cta').forEach(a=>{a.href=CHECKOUT_URL;a.target='_blank';a.rel='noopener'});
+$('#lt').href=TERMS_URL;$('#lp').href=PRIVACY_URL;$('#lc').href='mailto:'+EMAIL;
+$('#dores').innerHTML=[['💉','“Quando foi a última vacina?”','A carteirinha sumiu, a data passou e você só lembra quando o vet pergunta.'],['💊','Remédio esquecido','Antibiótico, vermífugo, antipulgas… um dia você esquece e o tratamento perde efeito.'],['🐕‍🦺','Ele não obedece','Puxa a coleira, faz xixi no lugar errado. Você quer ensinar, mas não sabe por onde começar.'],['📅','Agenda bagunçada','Banho, tosa, consulta, ração acabando. Tudo anotado em papel, no WhatsApp ou em lugar nenhum.'],['💸','“Quanto gastei com ele?”','Ração, vet, banho, remédio… no fim do mês você não sabe para onde foi o dinheiro.'],['🚨','Emergência e nenhum vet por perto','De madrugada ou em cidade nova, você não sabe qual veterinário 24h fica mais perto.']].map(p=>`<div class="pain"><i>${p[0]}</i><h3>${p[1]}</h3><p>${p[2]}</p></div>`).join('');
+/* mockups */
+const D=[[2,'#ff7a3d'],[3,'#ff7a3d','#2fb872'],[5,'#3b82f6'],[6,'#e5484d'],[9,'#ff7a3d','#2fb872'],[10,'#ec4899'],[12,'#a855f7'],[16,'#ff7a3d','#2fb872','#ec4899'],[18,'#2fb872'],[20,'#3b82f6','#ff7a3d'],[23,'#a855f7'],[27,'#e5484d']];
+const calHTML=()=>{let h='';for(const l of 'DSTQQSS')h+=`<b class="mut">${l}</b>`;h+='<span></span>'.repeat(0);for(let d=1;d<=30;d++){const x=D.find(a=>a[0]==d);h+=`<span class="${d==16?'t':''}">${d}<div class="d">${x?x.slice(1).map(c=>`<i style="background:${c}"></i>`).join(''):''}</div></span>`}return `<div class="mc"><b style="font:800 18px 'Baloo 2';color:var(--od)">novembro 2026</b><div class="cal" style="margin-top:8px">${h}</div><div class="it" style="margin-top:8px"><i>🐾</i><div><b>Passeio da tarde</b><small>⏰ 17:30 · 📝 Levar água e saquinho</small></div></div></div>`};
+const bars=[[2,20],[3,190],[8,120],[12,45],[15,30],[16,15]];
+const finHTML=()=>`<div class="mc"><small class="mut">Mês atual</small><div style="font:800 34px 'Baloo 2'">R$ 420,00 <small class="mut" style="font:600 14px Nunito">de R$ 600,00</small></div><div class="bar"><i style="width:70%"></i></div><p style="margin:8px 0 14px;font-weight:800;font-size:14px">🟢 Dentro do orçamento: restam R$ 180,00</p><svg viewBox="0 0 300 130" style="width:100%"><g stroke="#f1d6bd" stroke-dasharray="3 3"><path d="M40 10H290M40 40H290M40 70H290M40 100H290"/></g><g font-size="9" fill="#86695a" text-anchor="end"><text x="34" y="13">R$ 200</text><text x="34" y="43">R$ 150</text><text x="34" y="73">R$ 100</text><text x="34" y="103">R$ 50</text></g>${bars.map(b=>`<rect x="${40+b[0]*8.2}" y="${100-b[1]*.45*1.0-(b[1]>0?0:0)+ (100-b[1]*.45>100?0:0)}" width="9" height="${b[1]*.45}" rx="2" fill="#ff7a3d"/>`).join('')}<g font-size="9" fill="#86695a" text-anchor="middle"><text x="48" y="122">2</text><text x="106" y="122">8</text><text x="146" y="122">12</text><text x="171" y="122">16</text><text x="270" y="122">28</text></g></svg><small class="mut">Gastos por dia do mês</small></div>`;
+const FE=[
+['💉 Saúde','Carteirinha digital e histórico de saúde','Registre vacinas, consultas, exames, peso e medicamentos. Tudo aparece numa linha do tempo, com gráfico de peso e a próxima dose sempre à vista.',['Aviso de vacina próxima ou atrasada','Peso com gráfico e datas','Histórico sempre à mão para mostrar ao veterinário'],`<div class="mc"><b>🔎 Linha do tempo do Thor</b><div class="it"><i>💉</i><div><b>V10 (reforço anual)</b><small>05/11 · próxima dose 05/12</small></div></div><div class="it"><i>🩺</i><div><b>Check-up anual</b><small>20/10 · Dra. Ana</small></div></div><div class="it"><i>💊</i><div><b>Antibiótico administrado</b><small>16/11 · por Ana</small></div><span class="tg">Feito</span></div><div class="it"><i>⚖️</i><div><b>31 kg</b><small>10/11 · +0,6 kg</small></div></div></div>`],
+['📅 Rotina','Calendário colorido da rotina','Cada cor é uma categoria: vacina, banho e tosa, remédio, passeio, alimentação. Toque no dia e veja as atividades, horários e anotações.',['Atividades que se repetem (diárias, semanais, mensais)','Lembretes na hora certa','Leve tudo para o calendário do celular'],calHTML()],
+['💰 Financeiro','Gastos sob controle, por animal','Defina o orçamento mensal e acompanhe quanto cada pet gastou, em gráficos por dia e por categoria. Compare todos os animais no mesmo gráfico.',['Orçamento × gastos do mês','Gráficos por dia, mês e categoria','Comparativo entre os seus pets'],finHTML()],
+['🎓 Adestramento','Adestramento passo a passo, com conquistas','Lições curtas para cães e gatos: sentar, deitar, vir quando chamado, ficar sozinho com calma e muito mais. Ganhe XP, nota, fotos e medalhas a cada lição.',['Trilhas para cães e gatos, em linguagem simples','Nível, XP e dias seguidos','Foto do seu pet fazendo a lição'],`<div class="mc"><div class="it" style="border:0"><div class="av" style="width:50px;height:50px">${pet('dog')}</div><div><b>Thor · Nível 3</b><small>Amigo dedicado</small></div><b style="font:800 24px 'Baloo 2'">135 XP</b></div><div class="bar"><i style="width:70%"></i></div><div class="medals" style="margin-top:12px"><div><span>🐾</span>Primeiro passo</div><div><span>📸</span>Fotógrafo</div><div><span>⭐</span>Nota máxima</div><div><span>🔥</span>Em chamas</div><div class="off"><span>🏆</span>Craque</div><div class="off"><span>🥇</span>Trilha</div><div class="off"><span>🌟</span>Mestre</div><div class="off"><span>🎓</span>Aluno</div></div></div>`],
+['🦮 Passeios','Passeios com trajeto no GPS','Com a sua permissão, o app desenha o caminho do passeio e mostra tempo, distância e calorias estimadas. No meio do caminho, dicas de hidratação e cuidados.',['Mapa do trajeto em tempo real','Tempo, metros e calorias','Dicas durante o passeio'],`<div class="mc"><svg viewBox="0 0 300 150" style="width:100%;background:#e8f2e6;border-radius:16px"><g stroke="#cfe3c9"><path d="M0 30H300M0 60H300M0 90H300M0 120H300M50 0V150M100 0V150M150 0V150M200 0V150M250 0V150"/></g><path d="M40 120C60 90 90 110 110 80S150 60 170 85 210 50 250 30" fill="none" stroke="#ff7a3d" stroke-width="5" stroke-linecap="round"/><circle cx="40" cy="120" r="7" fill="#2fb872"/><circle cx="250" cy="30" r="8" fill="#e5484d" stroke="#fff" stroke-width="3"/></svg><div style="display:flex;justify-content:space-around;text-align:center;margin:10px 0"><div><b style="font:800 20px 'Baloo 2'">18:24</b><br><small class="mut">tempo</small></div><div><b style="font:800 20px 'Baloo 2'">1,42 km</b><br><small class="mut">distância</small></div><div><b style="font:800 20px 'Baloo 2'">33</b><br><small class="mut">kcal est.</small></div></div><div style="background:#e6f7ee;color:#17724a;border-radius:14px;padding:10px;font-weight:700;font-size:13px">💧 Hora da água! Ofereça um pouco ao seu pet a cada 15 a 20 minutos.</div></div>`],
+['🤖 Assistente','Um assistente que conhece o histórico do seu pet','Pergunte sobre vacinas, peso, tratamentos, gastos e rotina e receba respostas com base no que você cadastrou, além de dicas gerais. Ele não faz diagnóstico: isso é com o veterinário.',['Resumo de saúde em um toque','Perguntas prontas para levar ao veterinário','Conversas guardadas por 2 dias'],`<div class="mc"><div class="bub u">Vacinas em dia?</div><div class="bub a"><b>Vacinas do Thor:</b><br>• V10 (reforço anual) · próxima 05/12<br>• Antirrábica · próxima 20/05<br><small>O calendário correto é definido pelo veterinário.</small></div><div class="bub u">Gastos do mês</div><div class="bub a">Neste mês o Thor gastou R$ 420,00 de um orçamento de R$ 600,00 (70%).</div></div>`]];
+$('#feats').innerHTML=FE.map(f=>`<div class="fr"><div class="ft"><span class="chip">${f[0]}</span><h3 style="font-size:32px;margin-top:12px">${f[1]}</h3><p>${f[2]}</p><ul>${f[3].map(x=>`<li>${x}</li>`).join('')}</ul></div><div>${f[4]}</div></div>`).join('');
+$('#mais').innerHTML=[['🐶','Cães e gatos','Vários pets, cada um com foto, carteirinha e rotina.'],['🎂','Idade em anos humanos','Fase de vida: filhote, adulto ou idoso.'],['📄','Documentos','Exames, receitas e carteirinha sempre à mão.'],['👨‍👩‍👧','Quem cuida junto','Anote quem dá a ração e quem leva ao pet shop.'],['📍','Perto de você','Atalhos para vet 24h, pet shops e farmácias no mapa.'],['📲','Instala no celular','Funciona como app, até sem internet.'],['🔔','Lembretes','Avisos das atividades e alarme no calendário.'],['🔒','Seus dados são seus','Ficam só no seu aparelho.']].map(m=>`<div><i>${m[0]}</i><b>${m[1]}</b><small>${m[2]}</small></div>`).join('');
+$('#faqs').innerHTML=[['Funciona para cachorro e gato?','Sim! O AmigoPet funciona para cães e gatos, de qualquer raça, porte e idade, incluindo pets sem raça definida.'],['Posso cadastrar mais de um pet?','Pode. Você cadastra todos os seus pets, cada um com foto, carteirinha, rotina, gastos e adestramento, e ainda compara os gastos entre eles.'],['O app substitui o veterinário?','Não. O AmigoPet ajuda você a organizar os cuidados e a lembrar de tudo, mas o diagnóstico e a prescrição de remédios e vacinas são sempre do veterinário.'],['Como instalo no celular?','No Android, abra o link no Chrome e toque em Instalar app. No iPhone, abra no Safari, toque em Compartilhar e depois em Adicionar à Tela de Início. O app tem um passo a passo na aba Instalar.'],['Funciona sem internet?','Depois de aberto uma vez, sim. O registro de passeios usa o GPS do aparelho, e os atalhos de mapa precisam de internet.'],['Como funcionam os lembretes?','O app avisa na hora das atividades enquanto estiver aberto ou em segundo plano, e você pode levar todas as atividades para o calendário do celular, que avisa mesmo com o app fechado.'],['Onde ficam os meus dados?','Só no seu aparelho. Nós não temos acesso às suas informações. Você pode exportar um backup e apagar tudo quando quiser.'],['Posso usar em mais de um celular?','Cada aparelho guarda os seus próprios dados. Para levar para outro celular, use Exportar e Importar backup dentro do app.'],['Como funciona a garantia?','Você tem 7 dias para pedir o reembolso, sem complicação, pela plataforma de compra ou pelo e-mail de suporte.'],['Como falo com o suporte?','Escreva para '+EMAIL+'. Respondemos o mais rápido possível.']].map(q=>`<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('');
+</script>
+</body>
+</html>
